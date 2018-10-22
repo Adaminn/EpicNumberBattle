@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class testScript : MonoBehaviour {
@@ -11,14 +9,10 @@ public class testScript : MonoBehaviour {
     void Start () {
         GameObject programTest = GameObject.Find("ProgramIF");
         playerScript = programTest.GetComponent<Compiler>();
-
     }
 	
 	// Update is called once per frame
 	void Update () {
-
-       
         testVystup.text = playerScript.testText;
-        
     }
 }

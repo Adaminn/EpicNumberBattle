@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,8 +12,6 @@ public class Compiler : MonoBehaviour {
     void Start() {
         inp.onEndEdit.AddListener(delegate { LockInput(inp); });
         //inp.onValueChange.AddListener(delegate { ValueChanged(); });
-
-      
     }
 
     void LockInput(InputField input)
@@ -57,6 +54,7 @@ public class Compiler : MonoBehaviour {
             Debug.Log("Main Input Empty");
         }
     }
+
     /*
     void ValueChanged()  {
         Debug.Log("Value Changed");
