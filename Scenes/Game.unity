@@ -277,7 +277,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu
+  m_Text: Quit
 --- !u!222 &141320503
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1023,7 +1023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1118898474}
   m_Layer: 0
-  m_Name: Options
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,7 +1061,7 @@ GameObject:
   - component: {fileID: 1395550411}
   - component: {fileID: 1395550410}
   m_Layer: 0
-  m_Name: MenuButton
+  m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
