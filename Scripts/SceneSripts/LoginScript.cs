@@ -6,19 +6,19 @@ public class LoginScript : MonoBehaviour {
     void Start()
     {
         //Starts welcoming player
-        createSharedObject();
+        checkSharedObject();
     }
 
     //If share object doesnt exist, creates it
-    public static SharedData createSharedObject() {
+    public static SharedData checkSharedObject() {
         try
         {
-            return GameObject.Find("SharedData").GetComponent<SharedData>();
+            return GameObject.Find(Variables.sharedDataObjectName).GetComponent<SharedData>();
         }
         catch
         {
-            GameObject gameObject = Instantiate(Variables.sharedData);
-            gameObject.name = "SharedData";
+            GameObject gameObject = Instantiate(Variables.sharedDataObject);
+            gameObject.name = Variables.sharedDataObjectName;
             return gameObject.GetComponent<SharedData>();
         }
     }

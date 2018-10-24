@@ -14,12 +14,6 @@ public class SceneSwap : MonoBehaviour {
     {
         SceneManager.LoadScene("Game");
     }
-
-    //For fututure content
-    public void startGame(int IPAdress)
-    {
-        SceneManager.LoadScene("Game");
-    }
     
     //Exist game
     public void exitGame()

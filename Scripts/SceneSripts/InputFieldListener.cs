@@ -7,7 +7,7 @@ public class InputFieldListener : MonoBehaviour {
 
     // Gets input field and change value of shared object
     public void changeValue () {
-        sharedData = GameObject.Find("SharedData").GetComponent<SharedData>();
+        sharedData = GameObject.Find(Variables.sharedDataObjectName).GetComponent<SharedData>();
         InputField input = this.GetComponent<InputField>();
         if (input.text != "") {
             switch (value)

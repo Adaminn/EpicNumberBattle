@@ -16,7 +16,7 @@ public class SharedData : MonoBehaviour {
 
     void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        DontDestroyOnLoad(this.gameObject);
         Data = this;
     }
 }
